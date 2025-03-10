@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptomonnaie - Guide & Actualités</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background: #333; color: white; padding: 15px; text-align: center; }
+        nav { text-align: center; padding: 10px; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
+        section { padding: 20px; max-width: 800px; margin: auto; background: white; }
+        footer { text-align: center; padding: 10px; background: #333; color: white; margin-top: 20px; }
+        img { max-width: 100%; height: auto; display: block; margin: 10px auto; }
+        #comment-section { margin-top: 20px; }
+        #comment-section textarea { width: 100%; height: 100px; }
+        #comment-section button { display: block; margin-top: 10px; padding: 10px; background: #333; color: white; border: none; cursor: pointer; }
+        header h1 {
+       opacity: 0;
+       transform: translateY(50px);
+       animation: fadeInUp 1s forwards;
+    }
+
+        @keyframes fadeInUp {
+        to {
+        opacity: 1;
+        transform: translateY(0);
+           }
+    }
+        nav a {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 5px;
+            transition: color 0.3s ease;
+              }
+        
+        /* Effet sur le lien au survol */
+        nav a:hover {
+            color: #007bff;
+                    }
+        
+        /* Effet de soulignement lors du survol */
+        nav a:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #007bff;
+            bottom: 0;
+            left: 50%;
+            transition: width 0.3s, left 0.3s;
+                     }
+
+        nav a:hover:before {
+            width: 100%;
+            left: 0;
+                           }
+
+        section { padding: 20px; max-width: 800px; margin: auto; background: white; }
+        footer { text-align: center; padding: 10px; background: #333; color: white; margin-top: 20px; }
+
+        /* ligne défilement fluide */
+        html {
+        scroll-behavior: smooth;
+             }
+    </style>
+
+<body>
+    <header>
+        <h1>Cryptomonnaie - Guide & Actualités</h1>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#fonctionnement">Fonctionnement</a>
+        <a href="#avantages">Avantages & Risques</a>
+        <a href="#cryptos">Cryptos Principales</a>
+        <a href="#actualites">Actualités</a>
+    </nav>
+    <section id="introduction">
+        <h2>Introduction aux Cryptomonnaies</h2>
+        <img src="images/crypto-intro.jpg" alt="Illustration de la cryptomonnaie">
+        <p>Les cryptomonnaies sont des monnaies numériques qui fonctionnent sans besoin d'une autorité centrale, comme une banque ou un gouvernement. Elles utilisent une technologie décentralisée appelée <strong>blockchain</strong>, qui permet d'effectuer des transactions de manière sécurisée et transparente. Ce système a révolutionné les transactions financières en offrant une alternative aux méthodes traditionnelles, tout en permettant à des individus du monde entier d'effectuer des paiements ou des investissements de façon indépendante.</p>
+    </section>
+    <section id="fonctionnement">
+        <h2>Comment Fonctionnent-elles ?</h2>
+        <img src="images/blockchain.png" alt="Schéma de la blockchain">
+        <p>Les cryptomonnaies reposent sur un réseau de blockchain, qui est un registre distribué et public des transactions. Ce registre est maintenu et validé par un réseau de nœuds (ordinateurs) qui assurent la transparence et la sécurité des échanges. Les transactions sont validées par des mécanismes de consensus, comme la preuve de travail (Proof of Work) ou la preuve d'enjeu (Proof of Stake), qui garantissent l’intégrité du système et éliminent le besoin d'intermédiaires. Cela permet des transactions directes entre utilisateurs, tout en étant sécurisé grâce à des algorithmes de cryptographie.</p>
+    </section>
+    <section id="avantages">
+        <h2>Avantages & Risques</h2>
+        <img src="images/crypto-avantages.jpg" alt="Graphique des avantages des cryptos">
+        <p><strong>Avantages :</strong><br>
+
+    <strong>Accessibilité et Inclusion Financière :</strong> Les cryptomonnaies permettent aux individus non bancarisés d'accéder à des services financiers, en particulier dans les régions où les infrastructures bancaires sont limitées.<br>
+    <strong>Transparence et Sécurité :</strong> Grâce à la blockchain, chaque transaction est enregistrée et vérifiable, ce qui rend les activités plus transparentes et difficiles à falsifier.<br>
+    <strong>Transferts Rapides et à Bas Coût :</strong> Les cryptomonnaies permettent de réaliser des transactions à l'échelle mondiale en quelques minutes avec des frais bien inférieurs à ceux des systèmes bancaires traditionnels.<br></p>
+        <p><strong>Risques :</strong><br>
+
+    <strong>Volatilité des Marchés :</strong> Les cryptomonnaies sont sujettes à des fluctuations de prix extrêmes, ce qui peut entraîner des pertes financières importantes.<br>
+    <strong>Absence de Régulation :</strong> Le marché des cryptomonnaies étant encore en développement, il existe des risques élevés d'escroqueries et de manipulations.<br>
+    <strong>Impact Environnemental :</strong> Certaines cryptomonnaies, en particulier celles qui utilisent la preuve de travail, consomment une quantité d'énergie considérable, posant des questions sur leur impact écologique.<br></p>
+    </section>
+    <section id="cryptos">
+        <h2>Les Cryptos Principales</h2>
+        <img src="images/top-cryptos.jpg" alt="Top cryptomonnaies du marché">
+        <p><strong>Bitcoin (BTC) :</strong> Créée en 2009, Bitcoin est la première cryptomonnaie et reste la plus célèbre, souvent appelée "l'or numérique".<br>
+<strong>Ethereum (ETH) :</strong> Lancée en 2015, Ethereum est une plateforme permettant de créer des contrats intelligents et des applications décentralisées.<br>
+<strong>Binance Coin (BNB) :</strong> Utilisée principalement sur la plateforme Binance pour payer les frais de transaction, elle est aussi utilisée dans d’autres applications.<br>
+<strong>Cardano (ADA) :</strong> Cardano vise à offrir une infrastructure plus sécurisée et scalable pour les applications décentralisées.<br>
+<strong>Solana (SOL) :</strong> Réputée pour ses transactions rapides et peu coûteuses, Solana est une plateforme populaire pour la finance décentralisée (DeFi).<br></p>
+    </section>
+    <section id="actualites">
+        <h2>Actualités</h2>
+        <img src="images/crypto-news.webp" alt="Dernières actualités sur la crypto">
+        <p>Les cryptomonnaies continuent de susciter un intérêt croissant, en particulier parmi les jeunes générations. Selon une étude récente, 57 % des acheteurs de cryptomonnaies en France ont entre 18 et 34 ans, attirés par le potentiel de gains importants et la technologie innovante de la blockchain. Des personnalités influentes et des communautés en ligne jouent un rôle essentiel dans la propagation de l'engouement pour cette technologie.<br>
+
+D'un autre côté, les régulateurs financiers, notamment le Comité de Bâle, renforcent leur surveillance du marché des cryptomonnaies. Des propositions de régulations plus strictes pour les banques concernant leur exposition aux actifs numériques ont été avancées, afin d'éviter une crise financière majeure.</p>
+    </section>
+    <section id="comment-section">
+        <h2>Donnez votre avis sur la cryptomonnaie</h2>
+        <textarea placeholder="Écrivez votre commentaire ici..."></textarea>
+        <button onclick="submitComment()">Envoyer</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 Cryptomonnaie Mon Site ;) </p>
+    </footer>
+    <script>
+        function submitComment() {
+            alert("Votre commentaire a été soumis !");
+        }
+    </script>
+
+</body>
+</html>
+
